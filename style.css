@@ -65,7 +65,9 @@ body {
     border: 1px solid #000;
 
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
 }
 
 .action {
@@ -73,9 +75,12 @@ body {
     justify-content: space-between;
 }
 
-.search > .bar {
+#search {
     flex: 1;
-    border: 2px solid brown;
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+    background-color: lightgray;
 }
 
 .profile {
@@ -139,8 +144,17 @@ body {
     gap: 15px;
     font-family: "Roboto Condensed";
     font-size: x-large;
-    margin: 10px;
+    margin: 15px;
     align-content: center;
     color: white;
 }
 
+.bell {
+    height: 1em;
+    width: 1em;
+}
+
+.account {
+    height: 2em;
+    width: 2em;
+}
