@@ -17,6 +17,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: "Roboto Condensed";
 }
 
 .container {
@@ -32,7 +33,6 @@ body {
 
     display: grid;
     grid-template-rows: auto auto;
-    border: 5px solid green;
 }
 
 .sidebar {
@@ -62,8 +62,6 @@ body {
 
 
 .search {
-    border: 1px solid #000;
-
     display: flex;
     gap: 20px;
     align-items: center;
@@ -73,7 +71,22 @@ body {
 .action {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
 }
+
+.greeting {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
 
 #search {
     flex: 1;
@@ -81,6 +94,11 @@ body {
     border-radius: 10px;
     height: 2em;
     background-color: lightgray;
+    box-shadow: 3px 3px 10px lightblue;
+}
+
+#search:focus {
+    outline: none;
 }
 
 .profile {
@@ -88,10 +106,6 @@ body {
     gap: 10px;
 }
 
-.buttons {
-    display: flex;
-    gap: 10px;
-}
 
 .projects {
     grid-row: 1 / -1;
@@ -104,6 +118,9 @@ body {
     border: 5px solid yellow;
 }
 
+
+
+/* Border to see better the content */
 .announcements {
     border: 3px solid lightcoral;
 }
@@ -115,15 +132,9 @@ body {
 }
 
 
-/* Border to see the content better */
 
 
 
-.article {
-    border: 1px solid #000;
-    /* border-left: 10px solid blue;
-    border-radius: 15px; */
-}
 
 
 
@@ -142,7 +153,7 @@ body {
     display: flex;
     height: 1em;
     gap: 15px;
-    font-family: "Roboto Condensed";
+    font-family: inherit;
     font-size: x-large;
     margin: 15px;
     align-content: center;
@@ -157,4 +168,22 @@ body {
 .account {
     height: 2em;
     width: 2em;
+}
+
+.buttons {
+    gap: 20px;
+}
+
+
+button {
+    background-color: #3b82f6;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 2em;
+    width: 5rem;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
 }
